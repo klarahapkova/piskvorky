@@ -14,3 +14,16 @@ body {
   margin: 0;
   padding: 3rem;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 23rem;
+  height: fit-content;
+  justify-content: center;
+  background-color: #283e50;
+  color: white;
+  line-height: 1.5;
+  margin: 0 auto;
+}
