@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(#6863af, #fcc6da);
+  margin: 0;
+  padding: 3rem;
+}
