@@ -48,3 +48,42 @@ img {
   margin-block-end: 0rem;
   padding: 0 1rem 2rem 1rem;
 }
+
+.paticka {
+  text-align: center;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.paticka__pravidla {
+  background-color: #1fcca4;
+  border-bottom: 1px solid #283e50;
+}
+
+.paticka__pravidla a:hover {
+  background-color: #1cbb96;
+}
+
+.paticka__zacni {
+  background-color: #0197f6;
+}
+
+.paticka__zacni a:hover {
+  background-color: #0090e9;
+}
