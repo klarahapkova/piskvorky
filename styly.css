@@ -26,10 +26,12 @@ body {
   color: white;
   line-height: 1.5;
   margin: 0 auto;
+  border-radius: 10px 10px 0px 0px;
 }
 
 img {
   width: 23rem;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .stred__nadpis {
@@ -61,6 +63,19 @@ ul {
   margin-block-end: 0em;
 }
 
+ol {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 0em 4em 2em 4em;
+  margin: 0;
+}
+
+ol li {
+  text-align: left;
+  padding: 0.5em;
+  line-height: 1.3;
+}
+
 a {
   display: inline-block;
   width: 100%;
@@ -71,12 +86,14 @@ a {
   margin: 0;
 }
 
-.paticka__pravidla {
+.paticka__pravidla,
+.paticka__uvodni-stranka {
   background-color: #1fcca4;
   border-bottom: 1px solid #283e50;
 }
 
-.paticka__pravidla a:hover {
+.paticka__pravidla,
+.paticka__uvodni-stranka a:hover {
   background-color: #1cbb96;
 }
 
