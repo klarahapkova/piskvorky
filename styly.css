@@ -8,18 +8,19 @@ html {
 }
 
 body {
+  display: flex;
   min-width: 100vw;
   min-height: 100vh;
   background: linear-gradient(#6863af, #fcc6da);
   margin: 0;
-  padding: 3rem;
+  padding: 3em;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 23rem;
+  width: 23em;
   height: fit-content;
   justify-content: center;
   background-color: #283e50;
@@ -30,25 +31,33 @@ body {
 }
 
 img {
-  width: 23rem;
+  width: 100%;
   border-radius: 10px 10px 0px 0px;
+}
+
+img.kolecko,
+img.krizek {
+  display: inline-block;
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
 }
 
 .stred__nadpis {
   font-family: "Lobster", sans-serif;
-  font-size: 3rem;
+  font-size: 3em;
   font-weight: 600;
   margin-block-start: 0rem;
   margin-block-end: 0rem;
-  padding: 2rem;
+  padding: 0.5em;
 }
 
 .stred__odstavec {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-  padding: 0 1rem 2rem 1rem;
+  font-size: 1em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding: 0 1em 2em 1em;
 }
 
 .paticka {
@@ -58,14 +67,14 @@ img {
 
 ul {
   list-style: none;
-  padding-inline-start: 0rem;
+  padding-inline-start: 0em;
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
 
 ol {
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
   padding: 0em 4em 2em 4em;
   margin: 0;
 }
@@ -79,7 +88,7 @@ ol li {
 a {
   display: inline-block;
   width: 100%;
-  padding: 1rem;
+  padding: 1em;
   font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
