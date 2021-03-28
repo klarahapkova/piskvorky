@@ -8,21 +8,18 @@ html {
 }
 
 body {
-  display: flex;
   min-width: 100vw;
   min-height: 100vh;
   background: linear-gradient(#6863af, #fcc6da);
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 3em;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  width: 23em;
-  height: fit-content;
-  justify-content: center;
+  min-width: 300px;
+  max-width: 30%;
   background-color: #283e50;
   color: white;
   line-height: 1.5;
@@ -30,7 +27,7 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 
-img {
+.hlavicka img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
@@ -73,8 +70,6 @@ ul {
 }
 
 ol {
-  font-family: "Roboto", sans-serif;
-  font-size: 1em;
   padding: 0em 4em 2em 4em;
   margin: 0;
 }
@@ -112,4 +107,65 @@ a {
 
 .paticka__zacni a:hover {
   background-color: #0090e9;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+.obrazek img {
+  width: 100%;
+}
+
+@media (min-width: 540px) {
+  .flex-container {
+    max-width: 80vw;
+  }
+  .flex-obrazky {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1em;
+  }
+
+  .obrazek {
+    width: calc(100% / 2);
+    display: flex;
+    text-align: center;
+    padding: 0em 1em;
+  }
+
+  figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .obrazek img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .flex-container {
+    max-width: 80vw;
+  }
+  .flex-obrazky  {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .obrazek {
+    width: calc((100% - 10px) / 2);
+    display: flex;
+    text-align: center;
+  }
+
+  figure .obrazek img {
+    width: 100%;
+  }
 }
