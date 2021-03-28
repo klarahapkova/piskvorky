@@ -123,20 +123,19 @@ figcaption {
 
 @media (min-width: 540px) {
   .flex-container {
-    max-width: 80vw;
+    max-width: 60vw;
   }
   .flex-obrazky {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1em;
+    padding: 0.7em;
   }
 
   .obrazek {
     width: calc(100% / 2);
     display: flex;
     text-align: center;
-    padding: 0em 1em;
+    padding: 0em 0.7em;
   }
 
   figure {
@@ -151,21 +150,27 @@ figcaption {
 
 @media (min-width: 960px) {
   .flex-container {
-    max-width: 80vw;
+    max-width: 60vw;
   }
-  .flex-obrazky  {
+  .flex-obrazky {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    padding: 0.7em;
   }
 
   .obrazek {
-    width: calc((100% - 10px) / 2);
+    width: calc(100% / 2);
     display: flex;
     text-align: center;
+    padding: 0em 0.7em;
   }
 
-  figure .obrazek img {
+  figure {
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .obrazek img {
     width: 100%;
   }
 }
