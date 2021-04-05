@@ -8,18 +8,16 @@ html {
 }
 
 body {
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   background: linear-gradient(#6863af, #fcc6da);
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 2em;
+  margin-bottom: 3em;
 }
 
 .flex-container {
   text-align: center;
-  min-width: 280px;
-  max-width: 30%;
+  min-width: 80vmin;
   background-color: #283e50;
   color: white;
   line-height: 1.5;
@@ -36,12 +34,14 @@ img.kolecko,
 img.krizek {
   display: inline-block;
   filter: invert(100%);
-  width: 1em;
-  height: 1em;
+  width: 0.8em;
+  height: 0.8em;
+  padding: 0px;
 }
 
 .stred__nadpis {
   font-family: "Lobster", sans-serif;
+  background-color: transparent;
   font-size: 3em;
   font-weight: 600;
   margin-block-start: 0rem;
@@ -62,7 +62,7 @@ img.krizek {
   padding: 0;
 }
 
-ul {
+ul.paticka {
   list-style: none;
   padding-inline-start: 0em;
   margin-block-start: 0em;
@@ -96,7 +96,7 @@ a {
   border-bottom: 1px solid #283e50;
 }
 
-.paticka__pravidla,
+.paticka__pravidla a:hover, /* bez toho dvojitýho a:hover mi ten první hover nefunguje */
 .paticka__uvodni-stranka a:hover {
   background-color: #1cbb96;
 }
@@ -123,7 +123,7 @@ figcaption {
 
 @media (min-width: 540px) {
   .flex-container {
-    max-width: 60vw;
+    width: 50%;
   }
   .flex-obrazky {
     display: flex;
@@ -150,7 +150,7 @@ figcaption {
 
 @media (min-width: 960px) {
   .flex-container {
-    max-width: 60vw;
+    max-width: 60%;
   }
   .flex-obrazky {
     display: flex;
@@ -171,4 +171,108 @@ figcaption {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+}
+
+.kontajner {
+  width: 80vmin;
+  background-color: transparent;
+  color: white;
+  margin: 0 auto;
+}
+
+.hra h1 {
+  text-align: center;
+  color: white;
+  font-family: "Lobster";
+  font-size: 3em;
+}
+
+.hraje {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.hraje p {
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+}
+
+.hraje .kolecko {
+  filter: invert(100%);
+  width: 0.9em;
+  height: 0.9em;
+}
+
+.hraje ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.ikony li {
+  margin: 0.2em;
+}
+
+.ikony a {
+  width: 100%;
+  height: 100%;
+}
+
+.ikony--home,
+.ikony--restart {
+  border-radius: 5px;
+}
+
+.ikony--home,
+.ikony--restart a:hover {
+  width: 100%;
+  height: 100%;
+}
+
+.ikony img {
+  width: 1.5em;
+  height: 1.5em;
+  align-items: center;
+}
+
+.ikony--home {
+  background-color: #1fcca4;
+}
+
+.ikony--home a:hover {
+  background-color: #1cbb96;
+  border-radius: 5px;
+}
+
+.ikony--restart {
+  background-color: #0197f6;
+}
+
+.ikony--restart a:hover {
+  background-color: #0090e9;
+  border-radius: 5px;
+}
+
+.ctverce {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.tlacitko {
+  background-color: #d0bedb;
+  width: calc(80vmin / 10);
+  height: calc(80vmin / 10);
+  border-width: 2px;
+}
+
+.tlacitko:hover,
+.tlacitko:focus {
+  background-color: #f6ecfc;
 }
