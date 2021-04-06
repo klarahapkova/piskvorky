@@ -270,6 +270,8 @@ figcaption {
   width: calc(80vmin / 10);
   height: calc(80vmin / 10);
   border-width: 2px;
+  padding: 0px;
+  outline: none; /* odmaže růžový boxík kolem čtverečků */
 }
 
 .tlacitko:hover,
