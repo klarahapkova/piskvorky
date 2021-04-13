@@ -198,6 +198,7 @@ figcaption {
 .hraje p {
   margin-block-start: 2em;
   margin-block-end: 2em;
+  font-size: 1.8em;
 }
 
 .hraje .kolecko {
@@ -276,12 +277,16 @@ figcaption {
 
 .tlacitko--kolecko {
   background-image: url("img/circle.svg");
+  background-size: calc(80vmin / 10) - 1;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tlacitko--krizek {
   background-image: url("img/cross.svg");
+  background-size: calc(80vmin / 10) - 1;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .tlacitko:hover,
