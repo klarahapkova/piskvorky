@@ -32,7 +32,9 @@ const zmenHrace = () => {
   console.log(kdoJeNaTahu());
   if (kdoJeNaTahu() === "kolecko") {
     document.querySelector(".kolecko").attributes.alt.value = "krizek";
+    document.querySelector(".kolecko").attributes.src.value = "img/cross.svg";
   } else {
     document.querySelector(".kolecko").attributes.alt.value = "kolecko";
+    document.querySelector(".kolecko").attributes.src.value = "img/circle.svg";
   }
 };
