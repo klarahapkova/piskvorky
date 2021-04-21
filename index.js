@@ -63,40 +63,27 @@ const kdoVyhral = () => {
     //můžeme napsat i jako pocitadlo ++
   });
   //console.log("Teď zjistíme, jestli někdo vyhrál.");
-  console.log(aktualniStav);
+  const prvniRadek = aktualniStav[0];
+  console.log(prvniRadek);
 
-  if (
-    aktualniStav[0][0] +
-      aktualniStav[0][1] +
-      aktualniStav[0][2] +
-      aktualniStav[0][3] +
-      aktualniStav[0][4] ===
-      "ooooo" ||
-    aktualniStav[0][0] +
-      aktualniStav[0][1] +
-      aktualniStav[0][2] +
-      aktualniStav[0][3] +
-      aktualniStav[0][4] ===
-      "xxxxx"
-  ) {
-    alert("Vyhrál jsi, kámo!");
-  } else if (
-    aktualniStav[0][0] +
-      aktualniStav[1][0] +
-      aktualniStav[2][0] +
-      aktualniStav[3][0] +
-      aktualniStav[4][0] ===
-      "ooooo" ||
-    aktualniStav[0][0] +
-      aktualniStav[1][0] +
-      aktualniStav[2][0] +
-      aktualniStav[3][0] +
-      aktualniStav[4][0] ===
-      "xxxxx"
-  ) {
-    alert("Vyhrál jsi, kámo!");
-  } else {
-    console.log("Jedeme dál");
+  for (let j = 0; j < 10; j += 1)
+  for (let i = 0; i < 6; i += 1) {
+    if (
+      aktualniStav[j][i] +
+        aktualniStav[j][i + 1] +
+        aktualniStav[j][i + 2] +
+        aktualniStav[j][i + 3] +
+        aktualniStav[j][i + 4] ===
+        "ooooo" ||
+      aktualniStav[j][i] +
+        aktualniStav[j][i + 1] +
+        aktualniStav[j][i + 2] +
+        aktualniStav[j][i + 3] +
+        aktualniStav[j][i + 4] ===
+        "xxxxx"
+    ) {
+      alert("Vyhrál jsi, kámo!");
+    }
   }
 };
 
@@ -110,12 +97,3 @@ const zjistiSymbol = (tlacitkoElm) => {
     return "";
   }
 };
-
-let pocetKrizku = 0;
-let pocetKolecek = 0;
-
-const resetPromennych = () => {
-  pocetKrizku = 0;
-  pocetKolecek = 0;
-};
-
