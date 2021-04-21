@@ -63,28 +63,83 @@ const kdoVyhral = () => {
     //můžeme napsat i jako pocitadlo ++
   });
   //console.log("Teď zjistíme, jestli někdo vyhrál.");
-  const prvniRadek = aktualniStav[0];
-  console.log(prvniRadek);
 
   for (let j = 0; j < 10; j += 1)
-  for (let i = 0; i < 6; i += 1) {
-    if (
-      aktualniStav[j][i] +
-        aktualniStav[j][i + 1] +
-        aktualniStav[j][i + 2] +
-        aktualniStav[j][i + 3] +
-        aktualniStav[j][i + 4] ===
-        "ooooo" ||
-      aktualniStav[j][i] +
-        aktualniStav[j][i + 1] +
-        aktualniStav[j][i + 2] +
-        aktualniStav[j][i + 3] +
-        aktualniStav[j][i + 4] ===
-        "xxxxx"
-    ) {
-      alert("Vyhrál jsi, kámo!");
+    for (let i = 0; i < 6; i += 1) {
+      if (
+        aktualniStav[j][i] +
+          aktualniStav[j][i + 1] +
+          aktualniStav[j][i + 2] +
+          aktualniStav[j][i + 3] +
+          aktualniStav[j][i + 4] ===
+          "ooooo" ||
+        aktualniStav[j][i] +
+          aktualniStav[j][i + 1] +
+          aktualniStav[j][i + 2] +
+          aktualniStav[j][i + 3] +
+          aktualniStav[j][i + 4] ===
+          "xxxxx"
+      ) {
+        alert("Vyhrál jsi, kámo!");
+      }
     }
-  }
+
+  for (let j = 0; j < 6; j += 1)
+    for (let i = 0; i < 10; i += 1)
+      if (
+        aktualniStav[j][i] +
+          aktualniStav[j + 1][i] +
+          aktualniStav[j + 2][i] +
+          aktualniStav[j + 3][i] +
+          aktualniStav[j + 4][i] ===
+          "ooooo" ||
+        aktualniStav[j][i] +
+          aktualniStav[j + 1][i] +
+          aktualniStav[j + 2][i] +
+          aktualniStav[j + 3][i] +
+          aktualniStav[j + 4][i] ===
+          "xxxxx"
+      ) {
+        alert("Vyhrál jsi, kámo!");
+      }
+
+  for (let j = 0; j < 6; j += 1)
+    for (let i = 0; i < 6; i += 1)
+      if (
+        aktualniStav[j][i] +
+          aktualniStav[j + 1][i + 1] +
+          aktualniStav[j + 2][i + 2] +
+          aktualniStav[j + 3][i + 3] +
+          aktualniStav[j + 4][i + 4] ===
+          "ooooo" ||
+        aktualniStav[j][i] +
+          aktualniStav[j + 1][i + 1] +
+          aktualniStav[j + 2][i + 2] +
+          aktualniStav[j + 3][i + 3] +
+          aktualniStav[j + 4][i + 4] ===
+          "xxxxx"
+      ) {
+        alert("Vyhrál jsi, kámo!");
+      }
+
+  for (let j = 1; j < 6; j += 1)
+    for (let i = 9; i < 6; i -= 1)
+      if (
+        aktualniStav[j][i] +
+          aktualniStav[j - 1][i + 1] +
+          aktualniStav[j - 2][i + 2] +
+          aktualniStav[j - 3][i + 3] +
+          aktualniStav[j - 4][i + 4] ===
+          "ooooo" ||
+        aktualniStav[j][i] +
+          aktualniStav[j - 1][i + 1] +
+          aktualniStav[j - 2][i + 2] +
+          aktualniStav[j - 3][i + 3] +
+          aktualniStav[j - 4][i + 4] ===
+          "xxxxx"
+      ) {
+        alert("Vyhrál jsi, kámo!");
+      }
 };
 
 const zjistiSymbol = (tlacitkoElm) => {
