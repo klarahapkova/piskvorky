@@ -122,20 +122,20 @@ const kdoVyhral = () => {
         alert("Vyhrál jsi, kámo!");
       }
 
-  for (let j = 1; j < 6; j += 1)
-    for (let i = 9; i < 6; i -= 1)
+  for (let j = 0; j < 6; j += 1)
+    for (let i = 9; i > 3; i -= 1)
       if (
         aktualniStav[j][i] +
-          aktualniStav[j - 1][i + 1] +
-          aktualniStav[j - 2][i + 2] +
-          aktualniStav[j - 3][i + 3] +
-          aktualniStav[j - 4][i + 4] ===
+          aktualniStav[j + 1][i - 1] +
+          aktualniStav[j + 2][i - 2] +
+          aktualniStav[j + 3][i - 3] +
+          aktualniStav[j + 4][i - 4] ===
           "ooooo" ||
         aktualniStav[j][i] +
-          aktualniStav[j - 1][i + 1] +
-          aktualniStav[j - 2][i + 2] +
-          aktualniStav[j - 3][i + 3] +
-          aktualniStav[j - 4][i + 4] ===
+          aktualniStav[j + 1][i - 1] +
+          aktualniStav[j + 2][i - 2] +
+          aktualniStav[j + 3][i - 3] +
+          aktualniStav[j + 4][i - 4] ===
           "xxxxx"
       ) {
         alert("Vyhrál jsi, kámo!");
