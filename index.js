@@ -80,7 +80,8 @@ const kdoVyhral = () => {
           aktualniStav[j][i + 4] ===
           "xxxxx"
       ) {
-        alert("Vyhrál jsi, kámo!");
+        confirm("Vyhrál jsi, kámo!");
+        window.location.reload();
       }
     }
 
@@ -100,7 +101,8 @@ const kdoVyhral = () => {
           aktualniStav[j + 4][i] ===
           "xxxxx"
       ) {
-        alert("Vyhrál jsi, kámo!");
+        confirm("Vyhrál jsi, kámo!");
+        window.location.reload();
       }
 
   for (let j = 0; j < 6; j += 1)
@@ -119,7 +121,8 @@ const kdoVyhral = () => {
           aktualniStav[j + 4][i + 4] ===
           "xxxxx"
       ) {
-        alert("Vyhrál jsi, kámo!");
+        confirm("Vyhrál jsi, kámo!");
+        window.location.reload();
       }
 
   for (let j = 0; j < 6; j += 1)
@@ -138,7 +141,8 @@ const kdoVyhral = () => {
           aktualniStav[j + 4][i - 4] ===
           "xxxxx"
       ) {
-        alert("Vyhrál jsi, kámo!");
+        confirm("Vyhrál jsi, kámo!");
+        window.location.reload();
       }
 };
 
@@ -152,3 +156,4 @@ const zjistiSymbol = (tlacitkoElm) => {
     return "";
   }
 };
+
